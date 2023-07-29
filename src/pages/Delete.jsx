@@ -2,6 +2,28 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import AllBlogs from './AllBlogs'
 
+
+
+  /* 
+  ######################################################################
+  ######################################################################
+  ######################################## HOMEWORK #####################
+  #######################################################################
+  ########################################################################
+  
+  
+  TODO: Implement the Delete Post button functionality
+
+  1) First task: When a user clicks the 'Delete Post' button, your task is to ensure that the blog post with the specified id is removed from the blogs array in the App.js.
+
+  2) Second task: Once the blog post is deleted, you need to redirect the application to the 'AllBlogs' page, with a route of '/blogs'.
+
+
+  Optional TODO: As an additional exercise, you can hide the 'Delete Post' button if the specified id is invalid (i.e., if no blog post has that id). T
+  */
+
+
+
 const Delete = ({blogs, setBlogs}) => {
   
 const {id} = useParams()
@@ -18,21 +40,6 @@ let filteredArray = blogs.filter(blog =>{
 
    <button>Delete Post</button>
 
-   {/* {filteredArray.map(blog =>{
-
-    return (
-        <>
-        <h2>Title: {blog.title}</h2>
-        <h3>Author: {blog.author}</h3>
-        <p>Contents: {blog.content}</p>
-        <p>Date: {blog.date}</p>
-        <p>Id: {blog.id}</p>
-        <hr />
-        </>
-    )
-   })} */}
-      
-    
     </>
   )
 }
